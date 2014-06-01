@@ -1,4 +1,147 @@
+$color-violet: #844cd9
+$color-dark: #2f2f2f
+$color-dark-light: #393939
+$color-base: $color-dark-light
+
+$bg-base: #fff
+$bg-gray: #f8f8f8
+$bg-border-gray: #e7e7e7
+
+$size-xl: 22px
+$size-lg: 18px
+$size-md: 16px
+$size-sm: 15px
+$size-xs: 14px
+$size-base: $size-xs
+
+$size-h1: 32px
+$size-h2: 26px
+
 body
-	font-family: Arial, sans-serif
-	font-size: 14px
+	+os
+	font-size: $size-base
+	color: $color-base
 	line-height: 1.4
+	min-width: 1190px
+	background: #fff
+	+font-smoothing
+
+h1, .h1
+	font-size: $size-h1
+	font-weight: normal
+	font-style: normal
+
+h2, .h2
+	font-size: $size-h2
+	font-weight: normal
+	font-style: normal
+
+.btn
+	display: inline-block
+	vertical-align: middle
+	+os_sb
+	font-size: $size-xs
+	color: $color-violet
+	text-decoration: none
+	text-transform: uppercase
+	text-align: center
+	+nosel
+	+border-radius(6px)
+	+transition(all .2s linear)
+	margin-left: 4px
+	margin-right: 4px
+	padding: 12px 25px
+	line-height: 18px
+	border: 3px solid $color-violet
+	&:hover
+		background: $color-violet
+		color: #fff
+	&:active
+		position: relative
+		top: 1px
+	&.btn_sm
+		padding: 7px 17px
+	&.btn_primary
+		background: $color-violet
+		color: #fff
+		&:hover
+			background: darken($color-violet, 5%)
+			border-color: darken($color-violet, 5%)
+	&.btn_block
+		display: block
+		margin-left: 0
+		margin-right: 0
+
+.header
+	position: fixed
+	z-index: 2
+	top: 0
+	left: 0
+	width: 100%
+	+transition(background .4s ease-in)
+	&.is-fixed
+		background: rgba(#fff, .6)
+	.container
+		padding: 33px 0
+	.header__logo
+		display: block
+		+s(logo)
+		+hidetext
+	.header__menu
+		text-align: right
+	.header__action
+		display: inline-block
+		vertical-align: middle
+		margin-left: 34px
+
+.nav
+	display: inline-block
+	vertical-align: middle
+	li
+		display: inline-block
+		vertical-align: middle
+		text-transform: uppercase
+		+os_sb
+		font-size: $size-xs
+		margin-left: 35px
+		&.is-active
+			color: $color-violet
+	a
+		color: inherit
+		text-decoration: none
+		&:hover
+			text-decoration: none
+
+.intro
+	position: relative
+	background: url(../img/cover.jpg) 50% 0 no-repeat fixed
+	background-size: cover
+	min-height: 865px
+	padding-top: 150px
+	padding-bottom: 420px
+	text-align: center
+	overflow: hidden
+	.h1
+		width: 68%
+		margin: 0 auto 30px
+	p
+		font-size: $size-lg
+		color: $color-dark
+		margin-bottom: 40px
+	.intro__screen
+		position: absolute
+		bottom: 0
+		left: -50px
+		right: -50px
+		img
+			display: block
+			margin: 0 auto
+
+// .clients
+	// height: 200px //tmp
+
+
+
+
+
+
