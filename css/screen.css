@@ -56,7 +56,13 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 .col-12 { width: 100%; }
 
-.footer { background: #f8f8f8; border: 1px solid #e7e7e7; border-width: 1px 0; }
+.footer, .services { background: #f8f8f8; border: 1px solid #e7e7e7; border-width: 1px 0; }
+
+[class^="icon-"], [class*=" icon-"] { display: inline-block; vertical-align: middle; }
+
+.icon-time { background: url('../img/icons-s6cf108e661.png') 0 -38px no-repeat; width: 24px; height: 24px; }
+
+.icon-mail { background: url('../img/icons-s6cf108e661.png') 0 -72px no-repeat; width: 24px; height: 24px; }
 
 body { font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; font-size: 14px; color: #393939; line-height: 1.4; min-width: 1190px; background: white; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
 
@@ -87,10 +93,13 @@ p { margin-bottom: 0.5em; }
 .link_primary { color: #844cd9; text-decoration: underline; }
 .link_primary:hover { text-decoration: none; }
 
-.header { position: fixed; z-index: 2; top: 0; left: 0; width: 100%; -webkit-transition: background 0.4s ease-in; -moz-transition: background 0.4s ease-in; -o-transition: background 0.4s ease-in; transition: background 0.4s ease-in; }
-.header.is-fixed { background: rgba(255, 255, 255, 0.6); }
-.header .container { padding: 33px 0; }
-.header .header__logo { display: block; background: url('../img/icons-sac38aced30.png') 0 0 no-repeat; width: 147px; height: 28px; font: 0/0 a; text-shadow: none; color: transparent; }
+.header { position: fixed; z-index: 2; top: 0; left: 0; width: 100%; -webkit-transition: background 0.3s ease-in; -moz-transition: background 0.3s ease-in; -o-transition: background 0.3s ease-in; transition: background 0.3s ease-in; }
+.header.is-fixed { background: rgba(255, 255, 255, 0.8); }
+.header.is-fixed .container { padding: 13px 0; }
+.header.is-fixed:hover { background: white; }
+.header.is-fixed:hover .container { padding: 33px 0; }
+.header .container { padding: 33px 0; -webkit-transition: padding 0.3s ease-in; -moz-transition: padding 0.3s ease-in; -o-transition: padding 0.3s ease-in; transition: padding 0.3s ease-in; }
+.header .header__logo { display: block; background: url('../img/icons-s6cf108e661.png') 0 0 no-repeat; width: 147px; height: 28px; font: 0/0 a; text-shadow: none; color: transparent; }
 .header .header__menu { text-align: right; }
 .header .header__action { display: inline-block; vertical-align: middle; margin-left: 34px; }
 
@@ -121,3 +130,6 @@ p { margin-bottom: 0.5em; }
 .footer .footer__form .form { width: 430px; margin: 0 auto 24px; }
 
 .form .form__row { margin-bottom: 13px; }
+
+.services .container { padding: 130px 0; }
+.services .h2 [class^="icon-"], .services .h2 [class*=" icon-"] { margin-right: 15px; }

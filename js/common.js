@@ -2,6 +2,8 @@ head.ready(function() {
 
 	console.log("These aren't the droids you're looking for!");
 
+	smoothScroll.init();
+
 	// Cache the Window object
 	$window = $(window);
 

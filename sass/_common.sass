@@ -22,6 +22,16 @@ $size-h2: 26px
 	border: 1px solid $bg-border-gray
 	border-width: 1px 0
 
+[class^="icon-"],
+[class*=" icon-"]
+	display: inline-block
+	vertical-align: middle
+
+.icon-time
+	+s(time)
+.icon-mail
+	+s(mail)
+
 body
 	+os
 	font-size: $size-base
@@ -117,11 +127,18 @@ p
 	top: 0
 	left: 0
 	width: 100%
-	+transition(background .4s ease-in)
+	+transition(background .3s ease-in)
 	&.is-fixed
-		background: rgba(#fff, .6)
+		background: rgba(#fff, .8)
+		.container
+			padding: 13px 0
+		&:hover
+			background: rgba(#fff, 1)
+			.container
+				padding: 33px 0
 	.container
 		padding: 33px 0
+		+transition(padding .3s ease-in)
 	.header__logo
 		display: block
 		+s(logo)
@@ -221,4 +238,11 @@ p
 	.form__row
 		margin-bottom: 13px
 
-
+.services
+	@extend %box
+	.container
+		padding: 130px 0
+	.h2
+		[class^="icon-"],
+		[class*=" icon-"]
+			margin-right: 15px
