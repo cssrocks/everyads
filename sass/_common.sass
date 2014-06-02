@@ -23,16 +23,6 @@ $size-h3: 24px
 	border: 1px solid $bg-border-gray
 	border-width: 1px 0
 
-[class^="icon-"],
-[class*=" icon-"]
-	display: inline-block
-	vertical-align: middle
-
-.icon-time
-	+s(time)
-.icon-mail
-	+s(mail)
-
 body
 	+os
 	font-size: $size-base
@@ -65,6 +55,16 @@ h2, .h2
 
 p
 	margin-bottom: 0.5em
+
+[class^="icon-"],
+[class*=" icon-"]
+	display: inline-block
+	vertical-align: middle
+
+.icon-time
+	+s(time)
+.icon-mail
+	+s(mail)
 
 .btn
 	display: inline-block
@@ -330,7 +330,117 @@ p
 			+s(support)
 			margin-left: -45px
 
+.traffic
+	text-align: center
+	.h2
+		margin-bottom: 80px
+	.container
+		padding: 102px 0 109px
 
+.slider
+	.slider__screen
+		position: relative
+		background: url(../img/iphone.png) no-repeat
+		width: 261px
+		height: 544px
+		margin: 0 auto
+		padding: 83px 22px 75px 26px
+	.slider__slides
+		width: 214px
+		height: 382px
+		overflow: hidden
+		+clr
+	.slider__pic
+		float: left
+		display: block
+		width: 214px
+		height: 382px
+		// +transition(all .2s linear)
+		display: none
+		&:first-child
+			display: block
+
+	.slider__menu
+		text-align: right
+		padding-top: 11px
+		&.slider__menu_right
+			text-align: left
+			.slider__menuitem
+				&:last-child
+					margin-top: 87px
+				a
+					padding: 20px 0 20px 101px
+				i
+					right: auto
+					left: 0
+		.slider__menuitem
+			position: relative
+			margin: 70px 0
+			a
+				display: block
+				font-size: $size-xl
+				color: $color-dark-light
+				text-decoration: none
+				padding: 20px 82px 20px 0
+			i
+				position: absolute
+				top: 7px
+				right: 0
+			&.slider__menuitem_app
+				a
+					i
+						top: 9px
+						right: 4px
+						+s(phone)
+					&:hover
+						i
+							+sp(phone_a)
+			&.slider__menuitem_world
+				a
+					i
+						right: -5px
+						top: 11px
+						+s(world)
+					&:hover
+						i
+							+sp(world_a)
+			&.slider__menuitem_calendar
+				a
+					i
+						right: -5px
+						top: 4px
+						+s(calendar)
+					&:hover
+						i
+							+sp(calendar_a)
+
+			&.slider__menuitem_browser
+				a
+					i
+						left: 9px
+						top: 11px
+						+s(browser)
+					&:hover
+						i
+							+sp(browser_a)
+			&.slider__menuitem_search
+				a
+					i
+						left: 8px
+						top: 13px
+						+s(search)
+					&:hover
+						i
+							+sp(search_a)
+			&.slider__menuitem_video
+				a
+					i
+						left: 3px
+						top: 16px
+						+s(video)
+					&:hover
+						i
+							+sp(video_a)
 
 
 
