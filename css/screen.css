@@ -99,9 +99,8 @@ p { margin-bottom: 0.5em; }
 
 .header { position: fixed; z-index: 2; top: 0; left: 0; width: 100%; -webkit-transition: background 0.3s ease-in; -moz-transition: background 0.3s ease-in; -o-transition: background 0.3s ease-in; transition: background 0.3s ease-in; }
 .header.is-fixed { background: rgba(255, 255, 255, 0.8); }
-.header.is-fixed .container { padding: 13px 0; }
+.header.is-fixed .container { padding: 34px 0; }
 .header.is-fixed:hover { background: white; }
-.header.is-fixed:hover .container { padding: 34px 0; }
 .header .container { padding: 34px 0; -webkit-transition: padding 0.3s ease-in; -moz-transition: padding 0.3s ease-in; -o-transition: padding 0.3s ease-in; transition: padding 0.3s ease-in; }
 .header .nav { margin-top: -3px; }
 .header .header__logo { display: block; background: url('../img/icons-sd1bc008dd6.png') 0 0 no-repeat; width: 147px; height: 28px; font: 0/0 a; text-shadow: none; color: transparent; }
@@ -175,16 +174,17 @@ p { margin-bottom: 0.5em; }
 .slider .slider__menu.slider__menu_right .slider__menuitem i { right: auto; left: 0; }
 .slider .slider__menu .slider__menuitem { position: relative; margin: 70px 0; }
 .slider .slider__menu .slider__menuitem a { display: block; font-size: 22px; color: #393939; text-decoration: none; padding: 20px 82px 20px 0; }
+.slider .slider__menu .slider__menuitem a:hover, .slider .slider__menu .slider__menuitem a.is-active { color: #844cd9; }
 .slider .slider__menu .slider__menuitem i { position: absolute; top: 7px; right: 0; }
 .slider .slider__menu .slider__menuitem.slider__menuitem_app a i { top: 9px; right: 4px; background: url('../img/icons-sd1bc008dd6.png') 0 -1137px no-repeat; width: 40px; height: 58px; }
-.slider .slider__menu .slider__menuitem.slider__menuitem_app a:hover i { background-position: 0 -1069px; }
+.slider .slider__menu .slider__menuitem.slider__menuitem_app a:hover i, .slider .slider__menu .slider__menuitem.slider__menuitem_app a.is-active i { background-position: 0 -1069px; }
 .slider .slider__menu .slider__menuitem.slider__menuitem_world a i { right: -5px; top: 11px; background: url('../img/icons-sd1bc008dd6.png') 0 -306px no-repeat; width: 58px; height: 58px; }
-.slider .slider__menu .slider__menuitem.slider__menuitem_world a:hover i { background-position: 0 -38px; }
+.slider .slider__menu .slider__menuitem.slider__menuitem_world a:hover i, .slider .slider__menu .slider__menuitem.slider__menuitem_world a.is-active i { background-position: 0 -38px; }
 .slider .slider__menu .slider__menuitem.slider__menuitem_calendar a i { right: -5px; top: 4px; background: url('../img/icons-sd1bc008dd6.png') 0 -967px no-repeat; width: 58px; height: 58px; }
-.slider .slider__menu .slider__menuitem.slider__menuitem_calendar a:hover i { background-position: 0 -808px; }
+.slider .slider__menu .slider__menuitem.slider__menuitem_calendar a:hover i, .slider .slider__menu .slider__menuitem.slider__menuitem_calendar a.is-active i { background-position: 0 -808px; }
 .slider .slider__menu .slider__menuitem.slider__menuitem_browser a i { left: 9px; top: 11px; background: url('../img/icons-sd1bc008dd6.png') 0 -510px no-repeat; width: 58px; height: 58px; }
-.slider .slider__menu .slider__menuitem.slider__menuitem_browser a:hover i { background-position: 0 -374px; }
+.slider .slider__menu .slider__menuitem.slider__menuitem_browser a:hover i, .slider .slider__menu .slider__menuitem.slider__menuitem_browser a.is-active i { background-position: 0 -374px; }
 .slider .slider__menu .slider__menuitem.slider__menuitem_search a i { left: 8px; top: 13px; background: url('../img/icons-sd1bc008dd6.png') 0 -578px no-repeat; width: 58px; height: 58px; }
-.slider .slider__menu .slider__menuitem.slider__menuitem_search a:hover i { background-position: 0 -442px; }
+.slider .slider__menu .slider__menuitem.slider__menuitem_search a:hover i, .slider .slider__menu .slider__menuitem.slider__menuitem_search a.is-active i { background-position: 0 -442px; }
 .slider .slider__menu .slider__menuitem.slider__menuitem_video a i { left: 3px; top: 16px; background: url('../img/icons-sd1bc008dd6.png') 0 -876px no-repeat; width: 68px; height: 47px; }
-.slider .slider__menu .slider__menuitem.slider__menuitem_video a:hover i { background-position: 0 -751px; }
+.slider .slider__menu .slider__menuitem.slider__menuitem_video a:hover i, .slider .slider__menu .slider__menuitem.slider__menuitem_video a.is-active i { background-position: 0 -751px; }

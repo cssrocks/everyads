@@ -142,11 +142,11 @@ p
 	&.is-fixed
 		background: rgba(#fff, .8)
 		.container
-			padding: 13px 0
+			padding: 34px 0
 		&:hover
 			background: rgba(#fff, 1)
-			.container
-				padding: 34px 0
+		// 	.container
+		// 		padding: 34px 0
 	.container
 		padding: 34px 0
 		+transition(padding .3s ease-in)
@@ -382,6 +382,9 @@ p
 				color: $color-dark-light
 				text-decoration: none
 				padding: 20px 82px 20px 0
+				&:hover,
+				&.is-active
+					color: $color-violet
 			i
 				position: absolute
 				top: 7px
@@ -392,7 +395,8 @@ p
 						top: 9px
 						right: 4px
 						+s(phone)
-					&:hover
+					&:hover,
+					&.is-active
 						i
 							+sp(phone_a)
 			&.slider__menuitem_world
@@ -401,7 +405,8 @@ p
 						right: -5px
 						top: 11px
 						+s(world)
-					&:hover
+					&:hover,
+					&.is-active
 						i
 							+sp(world_a)
 			&.slider__menuitem_calendar
@@ -410,7 +415,8 @@ p
 						right: -5px
 						top: 4px
 						+s(calendar)
-					&:hover
+					&:hover,
+					&.is-active
 						i
 							+sp(calendar_a)
 
@@ -420,7 +426,8 @@ p
 						left: 9px
 						top: 11px
 						+s(browser)
-					&:hover
+					&:hover,
+					&.is-active
 						i
 							+sp(browser_a)
 			&.slider__menuitem_search
@@ -429,7 +436,8 @@ p
 						left: 8px
 						top: 13px
 						+s(search)
-					&:hover
+					&:hover,
+					&.is-active
 						i
 							+sp(search_a)
 			&.slider__menuitem_video
@@ -438,7 +446,8 @@ p
 						left: 3px
 						top: 16px
 						+s(video)
-					&:hover
+					&:hover,
+					&.is-active
 						i
 							+sp(video_a)
 
