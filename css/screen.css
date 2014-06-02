@@ -132,4 +132,12 @@ p { margin-bottom: 0.5em; }
 .form .form__row { margin-bottom: 13px; }
 
 .services .container { padding: 130px 0; }
-.services .h2 [class^="icon-"], .services .h2 [class*=" icon-"] { margin-right: 15px; }
+.services .h2 { line-height: 1.1; }
+.services .h2 [class^="icon-"], .services .h2 [class*=" icon-"] { position: relative; top: -3px; margin-right: 15px; }
+.services p { font-size: 15px; color: #6f6f6f; }
+
+.providers { margin-top: 40px; }
+.providers ul { font-size: 0; }
+.providers li { display: inline-block; vertical-align: middle; height: 40px; line-height: 40px; font-size: 14px; margin-left: 20px; }
+.providers li:first-child { margin-left: 0; }
+.providers img { display: inline-block; vertical-align: middle; line-height: 1; }
