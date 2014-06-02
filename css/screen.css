@@ -56,13 +56,13 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 .col-12 { width: 100%; }
 
-.footer, .services { background: #f8f8f8; border: 1px solid #e7e7e7; border-width: 1px 0; }
+.footer, .services, .benefits { background: #f8f8f8; border: 1px solid #e7e7e7; border-width: 1px 0; }
 
 [class^="icon-"], [class*=" icon-"] { display: inline-block; vertical-align: middle; }
 
-.icon-time { background: url('../img/icons-s6cf108e661.png') 0 -38px no-repeat; width: 24px; height: 24px; }
+.icon-time { background: url('../img/icons-sb3f69a90c9.png') 0 -343px no-repeat; width: 24px; height: 24px; }
 
-.icon-mail { background: url('../img/icons-s6cf108e661.png') 0 -72px no-repeat; width: 24px; height: 24px; }
+.icon-mail { background: url('../img/icons-sb3f69a90c9.png') 0 -377px no-repeat; width: 24px; height: 24px; }
 
 body { font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 400; font-style: normal; font-size: 14px; color: #393939; line-height: 1.4; min-width: 1190px; background: white; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
 
@@ -70,7 +70,11 @@ h1, .h1 { font-size: 32px; }
 
 h2, .h2 { font-size: 26px; }
 
-h1, .h1, h2, .h2 { color: #393939; font-weight: normal; font-style: normal; margin-bottom: 25px; }
+h3, .h3 { font-size: 24px; color: #844cd9; }
+
+h1, .h1, h2, .h2, h3, .h3 { font-weight: normal; font-style: normal; margin-bottom: 25px; }
+
+h1, .h1, h2, .h2 { color: #393939; }
 
 p { margin-bottom: 0.5em; }
 
@@ -99,7 +103,7 @@ p { margin-bottom: 0.5em; }
 .header.is-fixed:hover { background: white; }
 .header.is-fixed:hover .container { padding: 33px 0; }
 .header .container { padding: 33px 0; -webkit-transition: padding 0.3s ease-in; -moz-transition: padding 0.3s ease-in; -o-transition: padding 0.3s ease-in; transition: padding 0.3s ease-in; }
-.header .header__logo { display: block; background: url('../img/icons-s6cf108e661.png') 0 0 no-repeat; width: 147px; height: 28px; font: 0/0 a; text-shadow: none; color: transparent; }
+.header .header__logo { display: block; background: url('../img/icons-sb3f69a90c9.png') 0 0 no-repeat; width: 147px; height: 28px; font: 0/0 a; text-shadow: none; color: transparent; }
 .header .header__menu { text-align: right; }
 .header .header__action { display: inline-block; vertical-align: middle; margin-left: 34px; }
 
@@ -111,7 +115,7 @@ p { margin-bottom: 0.5em; }
 
 .intro { position: relative; background: url(../img/cover.jpg) 50% 0 no-repeat fixed; background-size: cover; min-height: 865px; padding-top: 150px; padding-bottom: 420px; text-align: center; overflow: hidden; }
 .intro .h1 { width: 68%; margin: 0 auto 30px; }
-.intro p { font-size: 18px; color: #2f2f2f; margin-bottom: 40px; }
+.intro p { width: 72%; margin: 0 auto 40px; font-size: 18px; color: #2f2f2f; }
 .intro .intro__screen { position: absolute; bottom: 0; left: -50px; right: -50px; }
 .intro .intro__screen img { display: block; margin: 0 auto; }
 
@@ -141,3 +145,12 @@ p { margin-bottom: 0.5em; }
 .providers li { display: inline-block; vertical-align: middle; height: 40px; line-height: 40px; font-size: 14px; margin-left: 20px; }
 .providers li:first-child { margin-left: 0; }
 .providers img { display: inline-block; vertical-align: middle; line-height: 1; }
+
+.benefits .container { padding: 115px 0; }
+
+.benefit { position: relative; padding-top: 150px; text-align: center; }
+.benefit p { font-size: 15px; color: #6f6f6f; }
+.benefit:before { position: absolute; top: 0; left: 50%; content: ""; }
+.benefit.benefit_community:before { background: url('../img/icons-sb3f69a90c9.png') 0 -238px no-repeat; width: 68px; height: 95px; margin-left: -34px; }
+.benefit.benefit_tools:before { top: 6px; background: url('../img/icons-sb3f69a90c9.png') 0 -38px no-repeat; width: 86px; height: 90px; margin-left: -45px; }
+.benefit.benefit_support:before { top: 6px; background: url('../img/icons-sb3f69a90c9.png') 0 -138px no-repeat; width: 111px; height: 90px; margin-left: -45px; }

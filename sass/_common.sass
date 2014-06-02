@@ -16,6 +16,7 @@ $size-base: $size-xs
 
 $size-h1: 32px
 $size-h2: 26px
+$size-h3: 24px
 
 %box
 	background: $bg-gray
@@ -47,12 +48,20 @@ h1, .h1
 h2, .h2
 	font-size: $size-h2
 
+h3, .h3
+	font-size: $size-h3
+	color: $color-violet
+
 h1, .h1,
-h2, .h2
-	color: $color-dark-light
+h2, .h2,
+h3, .h3
 	font-weight: normal
 	font-style: normal
 	margin-bottom: 25px
+
+h1, .h1,
+h2, .h2
+	color: $color-dark-light
 
 p
 	margin-bottom: 0.5em
@@ -184,9 +193,10 @@ p
 		width: 68%
 		margin: 0 auto 30px
 	p
+		width: 72%
+		margin: 0 auto 40px
 		font-size: $size-lg
 		color: $color-dark
-		margin-bottom: 40px
 	.intro__screen
 		position: absolute
 		bottom: 0
@@ -270,6 +280,41 @@ p
 		display: inline-block
 		vertical-align: middle
 		line-height: 1
+
+.benefits
+	@extend %box
+	.container
+		padding: 115px 0
+
+.benefit
+	position: relative
+	padding-top: 150px
+	text-align: center
+	p
+		font-size: $size-sm
+		color: #6f6f6f
+	&:before
+		position: absolute
+		top: 0
+		left: 50%
+		content: ""
+	&.benefit_community
+		&:before
+			+s(community)
+			margin-left: -34px
+	&.benefit_tools
+		&:before
+			top: 6px
+			+s(tools)
+			margin-left: -45px
+	&.benefit_support
+		&:before
+			top: 6px
+			+s(support)
+			margin-left: -45px
+
+
+
 
 
 
